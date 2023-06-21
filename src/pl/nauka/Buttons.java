@@ -1,10 +1,12 @@
 package pl.nauka;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Buttons {
+public class Buttons implements ActionListener {
+    JButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     public Buttons(JFrame frm) {
-        JButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 
         btn1 = new JButton("1");
         btn1.setBounds(10,290,80,80);
@@ -41,5 +43,19 @@ public class Buttons {
         btn9 = new JButton("9");
         btn9.setBounds(190,110,80,80);
         frm.add(btn9);
+
+        btn1.addActionListener(this);
+        btn2.addActionListener(this);
+        btn3.addActionListener(this);
+        btn4.addActionListener(this);
+        btn5.addActionListener(this);
+        btn6.addActionListener(this);
+        btn7.addActionListener(this);
+        btn8.addActionListener(this);
+        btn9.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent e){
+        String btn1 = bt
     }
 }

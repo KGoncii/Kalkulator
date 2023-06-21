@@ -7,6 +7,7 @@ public class TextField {
         JTextField tf;
         tf = new JTextField();
         tf.setBounds(10, 20, 480, 80);
+        tf.setEditable(false);
         frm.add(tf);
     }
 }
